@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="flex flex-col items-center h-screen relative overflow-hidden">
+
+    <div class="absolute inset-0 bg-[url('/images/bg.jpg')] bg-cover bg-center bg-no-repeat blur-sm"></div>
+
+    <div class="relative z-10 w-full">
+        <h2 class="m-10 font-[600] text-3xl text-center text-white">Weather App</h2>
+        <div class="border-2 border-white w-[30vw] rounded-3xl mx-auto backdrop-blur-sm bg-white/10 bg-[linear-gradient(135deg,#00feba,#5b548a)]">
+            <!-- Input and Search Button -->
+            <div class="m-6 flex justify-center gap-2">
+                <input id="input" type="text" placeholder="Enter City Name..." class="w-96 border-2 border-white rounded-3xl p-3 bg-white/10  placeholder-black bg-white">
+                <button id="search" class="border-2 border-white pl-4 pr-4 rounded-full bg-white/10 hover:bg-white">
+                    <img src="images/search.png" class="w-4">
+                </button>
+            </div>
+
+            <!-- Cloud and Temperature Card -->
+            <div id="CloudTemp" class="flex flex-col items-center hidden">
+                <img id="cloudImage" src="/images/clouds.png" class="h-45 w-40">
+                <div id="temp" class="text-3xl font-[600] text-white">20°C</div>
+                <div id="city" class="text-4xl font-[600] text-white">Kalyan</div>
+            </div>
+
+            <!-- Humidity Card -->
+            <div id="humidityCard" class="flex flex-col items-center justify-center m-10 gap-6 text-white hidden">
+                <div class="flex items-center gap-3 p-4 bg-white/20 rounded-lg shadow-md w-48">
+                    <img src="/images/humidity.png" class="w-12 h-12 object-contain">
+                    <div class="flex flex-col">
+                        <div id="humidity" class="text-lg font-bold whitespace-nowrap text-gray-100">48%</div>
+                        <div class="text-sm whitespace-nowrap text-gray-300">Humidity</div>
+                    </div>
+                </div>
+                
+                <!-- Wind Speed Card -->
+                <div id="windCard" class="flex items-center gap-3 p-4 bg-white/20 rounded-lg shadow-md w-48 hidden">
+                    <img src="/images/wind.png" class="w-12 h-12 object-contain">
+                    <div class="flex flex-col">
+                        <div id="speed" class="text-lg font-bold whitespace-nowrap text-gray-100">10.29 Km/h</div>
+                        <div class="text-sm whitespace-nowrap text-gray-300">Wind Speed</div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
