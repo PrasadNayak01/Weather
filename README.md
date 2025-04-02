@@ -26,4 +26,4 @@ To use this app, you need an API key from OpenWeather.
 ![Weather App Screenshot](images/output.png)
 
 ---
-Made by ![Prasad Nayak](https://github.com/PrasadNayak01)
+Made by [Prasad Nayak](https://github.com/PrasadNayak01)
