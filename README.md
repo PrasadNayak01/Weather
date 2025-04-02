@@ -4,8 +4,8 @@ A simple Weather App that fetches and displays real-time weather data using the 
 
 ## Features
 - Get current weather information based on city name.
-- Displays temperature, weather condition, humidity, and wind speed.
-- User-friendly UI with responsive design.
+- Displays Temperature, Humidity, and Wind Speed.
+- User-friendly UI
 
 ## Technologies Used
 - **HTML**
